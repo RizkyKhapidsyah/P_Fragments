@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IDXML_relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/IDXML_Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="Fragment 1" />
+
+    <Button
+        android:id="@+id/IDXML_Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDXML_Button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="Fragment 2" />
+
+    <fragment
+        android:id="@+id/IDXML_Fragment"
+        android:name="com.rizkykhapidsyah.p_fragments.FragmentSatu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/IDXML_Button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        tools:layout="@layout/fragment_satu" />
+
+
+</RelativeLayout>
